@@ -13,5 +13,4 @@ public interface TodoReponsitory extends JpaRepository<Todo,Integer> {
 	
 	@Query("SELECT t FROM Todo t WHERE t.workName LIKE %?1%")
 	public List<Todo> search(String keyword);
-
 }

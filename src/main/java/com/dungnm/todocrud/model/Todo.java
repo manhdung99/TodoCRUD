@@ -20,9 +20,9 @@ public class Todo {
 	private Integer id;
 	@Column(name = "work")
 	private String workName;
-	@Column(name = "start")
+	@Column(name = "startDate")
 	private LocalDate startDate;
-	@Column(name = "end")
+	@Column(name = "endDate")
 	private LocalDate endDate;
 	@Column(name = "status")
 	@Enumerated(EnumType.STRING)
